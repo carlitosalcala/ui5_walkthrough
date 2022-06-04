@@ -10,20 +10,14 @@
       data-sap-ui-theme="sap_belize"
       data-sap-ui-libs="sap.m"
       data-sap-ui-compatVersion="edge"
-      data-sap-ui-preload="async"
+     // data-sap-ui-preload="async" //
+      data-sap-ui-async="true"
+      data-sap-ui-onInit="module:sap/ui/demo/walkthrough/index"
       data-sap-ui-resourceroots='{
         "sap.ui.demo.walkthrough": "./"
      }'
     ></script>
-    <script>
-      sap.ui.getCore().attachInit(function () {
-        sap.ui
-          .xmlview({
-            viewName: "sap.ui.demo.walkthrough.view.App",
-          })
-          .placeAt("content");
-      });
-    </script>
+    <script></script>
   </head>
   <body class="sapUiBody" id="content"></body>
 </html>
